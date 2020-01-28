@@ -43,6 +43,7 @@ body {
 
 h2 {
     font-family: 'EB Garamond', serif;
+    text-align: center;
 }
 
 .section {
@@ -61,6 +62,35 @@ h2 {
 #pslo {
     background-color: #d5d6d2;
     font-family: 'Marcellus', sans-serif;
+}
+
+#tools {
+    background-color: burlywood;
+}
+
+#key {
+    background-color: burlywood;
+}
+
+.local {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cloud {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.version-control {
+    color: #7A0019;
+}
+
+.ide {
+    color: aqua;
+}
+
+.testing {
+    color: green
 }
 
 #faculty {
@@ -142,4 +172,11 @@ img.pic {
   font-size: 80%;
   background-color: #d5d6d2;
   padding: 25px;
+}
+
+.tools-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
