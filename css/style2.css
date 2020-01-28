@@ -8,5 +8,129 @@ use float to make something locate itself on the right or left
 
 body{
     padding: 30px;
-    background-color: #ffffff;
+    background-color: #cfd6f3;
+}
+
+
+@media screen and(min-width 925px){
+  .pslo-courses-container{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  max-width: 53em;
+  }
+}
+
+
+#main-title{
+  text-align: left;
+  font-size: 60;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.faculty-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#faculty{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#faculty>ul>li {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+#faculty-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.section{
+  border-radius: 10px;
+  padding: 10px;
+  border: 5px purple ridge;
+  margin: 40px;
+}
+
+#style ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#style li {
+  float: left; /*explore what happens if this is 'right' instead*/
+}
+
+#style li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  text-decoration: none;
+}
+
+/* Change the link background color to #000 (black) on hover */
+#style li a:hover {
+  background-color: #000;
+}
+
+#style {
+  position: fixed;
+  background-color: #cfd6f3;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 55px;
+  padding-top: 0px;
+}
+
+#tools {
+  background-color: burlywood;
+}
+
+#key {
+  background-color: burlywood;
+}
+
+.local {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cloud {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.version-control {
+  color: #7A0019;
+}
+
+.ide {
+  color: grey;
+}
+
+.testing {
+  color: green
+}
+
+.tools-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
