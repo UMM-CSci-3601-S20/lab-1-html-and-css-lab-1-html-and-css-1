@@ -74,6 +74,13 @@ h2{
   padding: 30px;
 }
 
+/*This is an animation when pictures are scrolled over, it is different than
+the other style sheets rules*/
+img.pic:hover{
+  transform: rotate(360deg);
+  transition: all 1.5s ease-in-out;
+}
+
 #faculty-list {
   padding-left: 0;
   display: flex;
