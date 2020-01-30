@@ -66,10 +66,14 @@ h2 {
 
 #tools {
     background-color: burlywood;
+    width: 200px;
+    height: 250px;
 }
 
 #key {
     background-color: burlywood;
+    width:200px;
+    height:250px;
 }
 
 .local {
