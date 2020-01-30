@@ -7,23 +7,31 @@ use float to make something locate itself on the right or left
 */
 
 body{
-    padding: 30px;
-    background-color: #cfd6f3;
-}
-
-
-@media screen and(min-width 925px){
-  .pslo-courses-container{
-  align-items: center;
+  padding: 30px;
+  justify-content: center;
   display: flex;
-  flex-direction: row;
-  max-width: 53em;
-  }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(https://static.vecteezy.com/system/resources/previews/000/626/042/non_2x/vector-circuit-board-vertical-high-tech-technology-banner-background-texture.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 1200px 1000px;
+  background-color: rgb(7, 15, 2);
 }
+
+  .pslo-courses-container{
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+  max-width: 500px;
+  }
 
 
 #main-title{
-  text-align: left;
+  text-align: center;
+  color: white;
   font-size: 60;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -37,15 +45,17 @@ body{
 
 #faculty{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 
 #faculty>ul>li {
-  display: inline-block;
-  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20;
   padding: 30px;
 }
 
@@ -60,8 +70,9 @@ body{
 .section{
   border-radius: 10px;
   padding: 10px;
-  border: 5px purple ridge;
+  border: 5px rgb(52, 145, 153) outset;
   margin: 40px;
+  background: white;
 }
 
 #style ul {
@@ -73,7 +84,7 @@ body{
 }
 
 #style li {
-  float: left; /*explore what happens if this is 'right' instead*/
+  float: right; /*explore what happens if this is 'right' instead*/
 }
 
 #style li a {
@@ -100,11 +111,11 @@ body{
 }
 
 #tools {
-  background-color: burlywood;
+  background-color: white;
 }
 
 #key {
-  background-color: burlywood;
+  background-color: white;
 }
 
 .local {
@@ -129,8 +140,16 @@ body{
 }
 
 .tools-container{
-  display: flex;
-  flex-direction: row;
+  display: block;
+  /*flex-direction: row;*/
   justify-content: center;
   align-items: center;
+}
+
+.card{
+  border-radius: 10px;
+  border: 10px purple;
+  padding: 10px;
+  margin: 40px;
+  background: rgb(255, 255, 255);
 }
