@@ -9,18 +9,25 @@ use float to make something locate itself on the right or left
 body{
   padding: 30px;
   justify-content: center;
-  display: flex;
+  display: flex;/*makes body able to change depending on resolution*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /*Everything is put into the center of the page to fit with the
+  background and to allow for easier scroll-style viewing*/
   background: url(https://static.vecteezy.com/system/resources/previews/000/626/042/non_2x/vector-circuit-board-vertical-high-tech-technology-banner-background-texture.jpg);
+  /*Background url adds url to the background
+  background-repeat decides if it repeats at all
+  background-position decides where on the page it is anchored
+  background-attachment decides whether or not the image stays put.*/
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: 1200px 1000px;
+  background-size: 1200px 1000px;/*scaling the image to fit*/
   background-color: rgb(7, 15, 2);
 }
-
+  /*eliminated need of media query by centering and
+  controling scale of container and section width.*/
   .pslo-courses-container{
   justify-items: center;
   justify-content: center;
@@ -36,6 +43,11 @@ body{
   font-family: 'Courier New', Courier, monospace;
 }
 
+h2{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+}
+
 .faculty-container{
   max-width: 450px;
   display: flex;
@@ -48,6 +60,7 @@ body{
   max-width: 450px;
   display: flex;
   flex-direction: column;
+  /*Because of column style, flex-wrap no longer necessary*/
   align-items: center;
   justify-content: center;
 }
@@ -72,7 +85,8 @@ body{
 .section{
   border-radius: 10px;
   padding: 10px;
-  border: 5px rgb(52, 145, 153) outset;
+  border: 5px rgb(52, 145, 153) outset;/*outset changes the border
+  to have a shadow, making it look outset from the screen.*/
   margin: 40px;
   background: white;
 }
@@ -85,10 +99,6 @@ body{
   background-color: rgb(7, 15, 2);
 }
 
-#style li {
-  float: left;
-}
-
 #style li a {
   display: block;
   color: rgb(52, 145, 153);
@@ -97,21 +107,23 @@ body{
   text-decoration: none;
 }
 
+/*Changes link background color to white on hover.*/
 #style li a:hover {
   background-color: white;
 }
 
 #style {
-  height: 100%;
+  height: 100%;/*Full height of the screen*/
   width: 55px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: rgb(7, 15, 2);
-  overflow-x: hidden;
+  overflow-x: hidden;/*overflow off the screen is hidden, no horizontal scrolling*/
   padding-top: 10px;
-  transition: 0.5s;
+  /*moves the style selector to the left of the screen,
+  listing the options vertically.*/
 }
 
 #tools {
@@ -145,7 +157,6 @@ body{
 
 .tools-container{
   display: block;
-  /*flex-direction: row;*/
   justify-content: center;
   align-items: center;
 }
